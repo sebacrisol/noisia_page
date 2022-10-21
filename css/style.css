@@ -92,10 +92,9 @@ a {
 
 .subtitle {
     font-weight: normal;
-    margin-top: 15px;
-    
+    margin: 25px;
+    text-align: center;
 }
-
 
 
 .info-text {
@@ -108,7 +107,8 @@ a {
 
 .footer {
     text-align: center;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .footer__style { 
@@ -165,5 +165,35 @@ a {
         margin: 20px;
     }
 
+    .iframe-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .iframe-youtube {
+        display: flex;
+        margin: 25px;
+    }
+    
+    .iframe-soundcloud{
+        display: flex;
+        margin: 25px;
+    }
+    
+    .iframe-apple {
+        display: flex;
+        margin: 25px;
+    }
+
+    .iframe-spotify {
+        margin: 25px;
+    }
+
+    .platforms {
+        display: inline-block;
+    }
 }
 
