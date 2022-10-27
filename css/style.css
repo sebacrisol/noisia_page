@@ -35,6 +35,8 @@ a:hover {
     color: rgb(81, 83, 160);
 }
 
+
+
 /* NAVBAR - HEADER */
 
 
@@ -189,6 +191,20 @@ a {
 
 .icon {
     font-size: 25px;
+    color: gray;
+}
+
+.grey-icon:hover {
+    color: white;
+}
+
+.icon:hover {
+    color: rgb(79, 79, 79);
+}
+
+.grey-icon {
+    font-size: 25px;
+    color: grey;
 }
 
 /*Text*/.title {
