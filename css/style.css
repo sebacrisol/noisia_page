@@ -249,8 +249,12 @@ a {
     transition: all .3s ease-in;
 }
 
+.card a {
+    filter: brightness(100%) !important;
+}
+
 .icon {
-    font-size: 25px;
+    font-size: 25px; 
 }
 
 /*Text*/.title {
@@ -264,7 +268,8 @@ a {
 }
 
 ul {
-    list-style: none;}
+    list-style: none;
+}
 
 svg {
     --size: 25px;
@@ -275,12 +280,17 @@ svg {
 
 /* Hover */
 
+.social-media a:hover {
+        color: rgb(110, 110, 110);
+    }
+
+
 
 .card-img li {
     transition: all 0.8s ease;
 }
 
-.card:hover {
+.card-img:hover {
     transition: all 0.8s ease;
     filter: brightness(30%);
 }
