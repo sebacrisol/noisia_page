@@ -315,6 +315,12 @@ svg {
     transition-delay: .2s;
 }
 
+/* SECCION RADIO */
+
+.radio-vid {
+    margin-top: 30px;
+
+}
 
 /* footer */ 
 
@@ -325,6 +331,10 @@ svg {
 .footer {
     text-align: center;
     margin-top: 15px;
+}
+
+#footer__nav__ul {
+    padding: 0px;
 }
 
 .footer__style { 
