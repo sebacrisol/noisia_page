@@ -2,7 +2,6 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    
 }
 
 body {
@@ -34,8 +33,6 @@ body {
 a:hover {
     color: rgb(81, 83, 160);
 }
-
-
 
 /* NAVBAR - HEADER */
 
@@ -102,7 +99,7 @@ a {
 
 .subtitle {
     font-weight: normal;
-    margin: 25px;
+    margin: 35px;
     text-align: center;
 }
 
@@ -112,13 +109,19 @@ a {
     margin: 25px;
 }
 
+/* MUSIC SECTION */
+
+.title-discography {
+    margin: 50px 0px 80px 0px;
+}
+
 /*Card */
 
 .cards-grid {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
-    row-gap: 40px;
+    row-gap: 100px;
     justify-content: center;
 }
 
@@ -145,14 +148,17 @@ a {
 
 
 .card-img {
-    background-image: url(../imagenes/cards/closer-card.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
     height: 100%;
     width: 100%;
     position: absolute;
     transition: transform .3s ease-in-out;
     z-index: 2;
+}
+
+.closer {
+    background-image: url(../imagenes/cards/closer-card.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .outer-edges {
@@ -167,6 +173,60 @@ a {
     background-repeat: no-repeat;
 }
 
+.i-am-legion {
+    background-image: url(../imagenes/cards/i-am-legion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.the-resonance-iv {
+    background-image: url(../imagenes/cards/the-resonance-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.the-resonance-iii {
+    background-image: url(../imagenes/cards/the-resonance-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.the-resonance-ii {
+    background-image: url(../imagenes/cards/the-resonance-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.the-resonance-i {
+    background-image: url(../imagenes/cards/the-resonance-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.outer-edges-noisia-remixes {
+    background-image: url(../imagenes/cards/outer-edges-noisia-remixes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.outer-edges-remixes {
+    background-image: url(../imagenes/cards/outer-edges-remixes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dead-limit {
+    background-image: url(../imagenes/cards/dead-limit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.purpose {
+    background-image: url(../imagenes/cards/purpose.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
 /*Buttons*/
 .social-media {
     position: absolute;
@@ -176,7 +236,7 @@ a {
     width: 100%;
     padding: 0 1rem;
     transform: translateY(-200%);
-    z-index: 3;
+    z-index: 2;
     background:none;
 }
 
@@ -191,20 +251,6 @@ a {
 
 .icon {
     font-size: 25px;
-    color: gray;
-}
-
-.grey-icon:hover {
-    color: white;
-}
-
-.icon:hover {
-    color: rgb(79, 79, 79);
-}
-
-.grey-icon {
-    font-size: 25px;
-    color: grey;
 }
 
 /*Text*/.title {
@@ -234,7 +280,7 @@ svg {
     transition: all 0.8s ease;
 }
 
-.card-img:hover {
+.card:hover {
     transition: all 0.8s ease;
     filter: brightness(30%);
 }
@@ -284,9 +330,6 @@ svg {
 
 @media (min-width: 768px){
     
-    .abajo {
-        margin-top: 170px;
-    }
 
     /* nav bar */
 
@@ -299,7 +342,9 @@ svg {
     }
 
     .sticky {
-        position: fixed;
+        position: sticky;
+        top: 0%; 
+        z-index: 3;
         top: 0px;
         width: 100%;
         background-color: rgb(0, 0, 0);
@@ -311,7 +356,6 @@ svg {
 
     .main-img {
         width: 700px;
-        margin-top: 170px;
     }
 
     .main-img-tracklist {
@@ -369,7 +413,8 @@ svg {
         justify-content: center;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto;
-        column-gap: 70px;
+        column-gap: 100px;
+        margin-bottom: 30px;
     
     }
 
