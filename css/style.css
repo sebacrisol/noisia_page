@@ -289,6 +289,12 @@ svg {
     filter: brightness(30%);
 }
 
+.social-media:hover .card-img{
+    transition: all 0.8s ease;
+    filter: brightness(30%);
+
+}
+
 
 .card:hover {
     box-shadow: 1px 2px 10px rgba(35,35,35,0.5);
@@ -330,6 +336,8 @@ svg {
         width: 295px;
         flex-wrap: wrap;
     }
+
+    
 
 
 /* footer */ 
