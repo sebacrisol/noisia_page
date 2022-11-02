@@ -269,6 +269,11 @@ li {
     transition: all .3s ease-in;
 }
 
+.social-media a{
+    font-size: 25px;
+    color: white;
+}
+
 .card a {
     filter: brightness(100%) !important;
 }
@@ -354,7 +359,7 @@ svg {
 }
 
 .radio-div {
-    width: 300px;
+    width: 295px;
 }
 
 .vision-update {
@@ -502,27 +507,37 @@ svg {
         width: 600px;
     }
 
+    .update-title-div {
+        width: 1000px;
+    }
+
+    .vision-update {
+        font-size: 25px;
+    }
+
     .update {
         font-family: 'Roboto', sans-serif;
         font-size: 23px;
         font-weight: 100;
         margin-top: 40px;
-        width: 650px;
+        width: 600px;
+    }
+
+    .radio-img {
+        width: 500px;
     }
 
     .vision-iframe {
         width: 600px; 
         height: 500px;
+        margin-top: 50px;
+        margin-bottom: 40px;
     }
 
     .vision {
         width: 30%;
     }
     
-    .vision-iframe {
-        margin-top: 80px;
-        margin-bottom: 40px;
-    }
 
     /* footer */ 
 
