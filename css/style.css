@@ -410,6 +410,8 @@ svg {
         margin: 20px;
     }
 
+
+
     .iframe-grid {
         display: flex;
         flex-wrap: wrap;
@@ -419,21 +421,22 @@ svg {
 
     .iframe-youtube {
         display: flex;
-        margin: 25px;
+        margin: px;
+        
     }
     
     .iframe-soundcloud{
         display: flex;
-        margin: 25px;
+        margin: px;
     }
     
     .iframe-apple {
         display: flex;
-        margin: 25px;
+        margin: px;
     }
 
     .iframe-spotify {
-        margin: 25px;
+        margin: px;
     }
 
     .platforms {
