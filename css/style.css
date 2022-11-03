@@ -8,7 +8,6 @@ body {
     background-color: black;
     font-family: 'Oswald', sans-serif;
     color: white;
-
 }
 
 #body-grid {
@@ -22,10 +21,6 @@ body {
     justify-content: center;
 }
 
-.dnone {
-    display: none;
-}
-
 .black {
     color: rgba(0, 0, 0, 0.66);
 }
@@ -33,7 +28,6 @@ body {
 .nav-bar a:hover {
     color: rgb(81, 83, 160);
 }
-
 
 
 /* NAVBAR - HEADER */
@@ -75,7 +69,7 @@ li {
 
 }
 
-/* INDEX MAIN SECTION */
+/* SECCION INDEX MAIN MOBILE*/
 
 .main {
     display: grid;
@@ -104,7 +98,6 @@ li {
     margin: 35px;
     text-align: center;
 }
-
 
 .info-text {
     font-size: 20px;
@@ -135,13 +128,13 @@ li {
     margin-bottom: 30px;
 }
 
-/* MUSIC SECTION */
+/* SECCION MUSICA MOBILE */
 
 .title-discography {
     margin: 60px 0px 30px 0px;
 }
 
-/*Card */
+    /*Card */
 
 
 .card {
@@ -164,7 +157,7 @@ li {
     background-color: black;
 }
 
-/*Image*/
+    /*Image*/
 
 
 .card-img {
@@ -247,7 +240,8 @@ li {
     background-repeat: no-repeat;    
 }
 
-/*Buttons*/
+    /*Buttons*/
+
 .social-media {
     position: absolute;
     bottom: 0;
@@ -282,7 +276,9 @@ li {
     font-size: 25px; 
 }
 
-/*Text*/.title {
+    /*Text*/
+
+.title {
     font-size: 1.5em;
     font-weight: 500;
 }
@@ -303,13 +299,11 @@ svg {
     fill: #252525;
 }
 
-/* Hover */
+    /* Hover */
 
 .social-media a:hover {
         color: rgb(110, 110, 110);
     }
-
-
 
 .card-img li {
     transition: all 0.8s ease;
@@ -323,9 +317,7 @@ svg {
 .social-media:hover .card-img{
     transition: all 0.8s ease;
     filter: brightness(30%);
-
 }
-
 
 .card:hover {
     box-shadow: 1px 2px 10px rgba(35,35,35,0.5);
@@ -352,7 +344,7 @@ svg {
     transition-delay: .2s;
 }
 
-/* SECCION RADIO */
+/* SECCION RADIO MOBILE */
 
 .radio-vid {
     margin-top: 30px;
@@ -371,8 +363,24 @@ svg {
     height: 300px;
 }
 
+.radio-img {
+    width: 300px;
+    height: 300px;
+}
 
-/* footer */ 
+/* SECCION ABOUT US MOBILE */
+
+.biography {
+    margin: 40px 40px 0px 40px;
+}
+
+.biography p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+
+/* FOOTER MOBILE */ 
 
 .footer-grid {
     padding: 10px;
@@ -400,7 +408,7 @@ svg {
 @media (min-width: 768px){
     
 
-    /* nav bar */
+    /* nav bar desktop */
 
     .ul-grid {
         display: flex;
@@ -421,7 +429,7 @@ svg {
     }
 
 
-    /* main */
+    /* main desktop */
 
     .main-img {
         width: 700px;
@@ -447,8 +455,6 @@ svg {
         margin: 20px;
     }
 
-
-
     .iframe-grid {
         display: flex;
         flex-wrap: wrap;
@@ -462,13 +468,13 @@ svg {
         margin-bottom: 50px;
         
     }
-    
+
     .iframe-soundcloud{
         display: flex;
         margin-top: 50px;
         margin-bottom: 50px;
     }
-    
+
     .iframe-apple {
         display: flex;
         margin-top: 50px;
@@ -501,7 +507,7 @@ svg {
         transition: box-shadow .3s ease-in-out;
     }
 
-    /* seccion radio */
+    /* seccion radio desktop */
 
     .radio-div {
         width: 600px;
@@ -525,6 +531,7 @@ svg {
 
     .radio-img {
         width: 500px;
+        height: auto;
     }
 
     .vision-iframe {
@@ -537,9 +544,125 @@ svg {
     .vision {
         width: 30%;
     }
+
+    /* botones radio */
+
+    .wrapper {
+        display: inline-flex;
+        list-style: none;
+        height: 120px;
+        width: 100%;
+        padding-top: 40px;
+        padding-left: 0;
+        font-family: "Poppins", sans-serif;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
+    .wrapper .icon {
+        position: relative;
+        background: #fff;
+        border-radius: 50%;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    
+    .wrapper .tooltip {
+        position: absolute;
+        top: 0;
+        font-size: 14px;
+        background: #fff;
+        color: #fff;
+        padding: 5px 8px;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    
+    .wrapper .tooltip::before {
+        position: absolute;
+        content: "";
+        height: 8px;
+        width: 8px;
+        background: #fff;
+        bottom: -3px;
+        left: 50%;
+        transform: translate(-50%) rotate(45deg);
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    
+    .wrapper .icon:hover .tooltip {
+        top: -45px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    
+    .wrapper .icon:hover span,
+    .wrapper .icon:hover .tooltip {
+        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+    }
+    
+    .wrapper .spotify:hover,
+    .wrapper .spotify:hover .tooltip,
+    .wrapper .spotify:hover .tooltip::before {
+        background: #1DB954;
+        color: #fff;
+    }
+    
+    .wrapper .twitter:hover,
+    .wrapper .twitter:hover .tooltip,
+    .wrapper .twitter:hover .tooltip::before {
+        background: #ff7700;
+        color: #fff; }
+    
+        .wrapper .youtube:hover,
+        .wrapper .youtube:hover .tooltip,
+        .wrapper .youtube:hover .tooltip::before {
+        
+            background: #FF0000;
+            color: #fff;
+    }
     
 
-    /* footer */ 
+    /* seccion about us desktop */
+
+    .carrousel-tamanio {
+        margin-top: 10px;
+        width: 700px;
+        height: 500px;
+    }    
+
+    .biography {
+        margin: 40px;
+        width: 700px;
+    }
+
+    .biography p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+    }
+
+    /* seccion contact deesktop */
+
+    .div-formulario {
+        width: 500px;
+        margin-top: 60px;
+        margin-bottom: 160px;
+    }
+
+    /* footer desktop */ 
 
     .footer-grid {
         text-align: center;
@@ -558,95 +681,4 @@ svg {
 
     }
     
-}
-
-
-
-.wrapper {
-    display: inline-flex;
-    list-style: none;
-    height: 120px;
-    width: 100%;
-    padding-top: 40px;
-    padding-left: 0;
-    font-family: "Poppins", sans-serif;
-    justify-content: center;
-    margin-bottom: 50px;
-  }
-  
-  .wrapper .icon {
-    position: relative;
-    background: #fff;
-    border-radius: 50%;
-    margin: 10px;
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .wrapper .tooltip {
-    position: absolute;
-    top: 0;
-    font-size: 14px;
-    background: #fff;
-    color: #fff;
-    padding: 5px 8px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .wrapper .tooltip::before {
-    position: absolute;
-    content: "";
-    height: 8px;
-    width: 8px;
-    background: #fff;
-    bottom: -3px;
-    left: 50%;
-    transform: translate(-50%) rotate(45deg);
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .wrapper .icon:hover .tooltip {
-    top: -45px;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-  
-  .wrapper .icon:hover span,
-  .wrapper .icon:hover .tooltip {
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-  }
-  
-  .wrapper .spotify:hover,
-  .wrapper .spotify:hover .tooltip,
-  .wrapper .spotify:hover .tooltip::before {
-    background: #1DB954;
-    color: #fff;
-  }
-  
-  .wrapper .twitter:hover,
-  .wrapper .twitter:hover .tooltip,
-  .wrapper .twitter:hover .tooltip::before {
-    background: #ff7700;
-    color: #fff; }
-
-
-    .wrapper .youtube:hover,
-    .wrapper .youtube:hover .tooltip,
-    .wrapper .youtube:hover .tooltip::before {
-    
-        background: #FF0000;
-        color: #fff;
 }
